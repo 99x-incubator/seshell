@@ -1,0 +1,3 @@
+admin123,admin@123,Your login attempt was not successful. Please try again.,InvalidUserName
+admin,user@1234,Your login attempt was not successful. Please try again.,InvalidPassword
+,,User Name is required.,InvalidCredentials

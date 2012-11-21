@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D14E19F1-D2DE-48EB-B208-65F6D888D492}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SeShellTestStudio</RootNamespace>
+    <AssemblyName>SeShellTestStudio</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="configure.aspx" />
+    <Content Include="css\basic_styles.css" />
+    <Content Include="dashboard.aspx" />
+    <Content Include="downloadify\images\generate.png" />
+    <Content Include="downloadify\js\downloadify.min.js" />
+    <Content Include="downloadify\js\swfobject.js" />
+    <Content Include="downloadify\media\downloadify.swf" />
+    <Content Include="downloadify\src\downloadify.js" />
+    <Content Include="generate.aspx" />
+    <Content Include="images\but_bg.png" />
+    <Content Include="images\failure.png" />
+    <Content Include="images\footer.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\notrunnable.png" />
+    <Content Include="images\success.png" />
+    <Content Include="images\top.jpg" />
+    <Content Include="jquery\css\ui-darkness\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="jquery\css\ui-darkness\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="jquery\css\ui-darkness\images\ui-bg_glass_20_555555_1x400.png" />
+    <Content Include="jquery\css\ui-darkness\images\ui-bg_glass_40_0078a3_1x400.png" />
+    <Content Include="jquery\css\ui-darkness\images\ui-bg_glass_40_ffc73d_1x400.png" />
+    <Content Include="jquery\css\ui-darkness\images\ui-bg_gloss-wave_25_333333_500x100.png" />
+    <Content Include="jquery\css\ui-darkness\images\ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <Content Include="jquery\css\ui-darkness\images\ui-bg_inset-soft_25_000000_1x100.png" />
+    <Content Include="jquery\css\ui-darkness\images\ui-bg_inset-soft_30_f58400_1x100.png" />
+    <Content Include="jquery\css\ui-darkness\images\ui-icons_222222_256x240.png" />
+    <Content Include="jquery\css\ui-darkness\images\ui-icons_4b8e0b_256x240.png" />
+    <Content Include="jquery\css\ui-darkness\images\ui-icons_a83300_256x240.png" />
+    <Content Include="jquery\css\ui-darkness\images\ui-icons_cccccc_256x240.png" />
+    <Content Include="jquery\css\ui-darkness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jquery\css\ui-darkness\jquery-ui-1.8.23.custom.css" />
+    <Content Include="jquery\js\jquery-1.8.0.min.js" />
+    <Content Include="jquery\js\jquery-ui-1.8.23.custom.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data.cs" />
+    <Compile Include="configure.aspx.cs">
+      <DependentUpon>configure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="configure.aspx.designer.cs">
+      <DependentUpon>configure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.aspx.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard.aspx.designer.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="generate.aspx.cs">
+      <DependentUpon>generate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="generate.aspx.designer.cs">
+      <DependentUpon>generate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\GetSettings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="downloadify\src\com\dynamicflash\util\Base64.as" />
+    <None Include="downloadify\src\com\dynamicflash\util\tests\Base64Test.as" />
+    <None Include="downloadify\src\Downloadify.as" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>14244</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/SeShellTestStudio</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

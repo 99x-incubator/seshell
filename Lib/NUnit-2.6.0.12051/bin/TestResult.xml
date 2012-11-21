@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="F:\workdir\TestAutomation\Selenium\Adra_Match\SeleniumNUnit\bin\Debug\AMSelenium.Test.dll" total="8" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2012-06-06" time="12:17:51">
+  <environment nunit-version="2.6.0.12051" clr-version="4.0.30319.269" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="F:\workdir\TestAutomation\Selenium\Adra_Match\Lib\NUnit-2.6.0.12051\bin" machine-name="99XCW7KNA" user="99xckna" user-domain="99X" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="F:\workdir\TestAutomation\Selenium\Adra_Match\SeleniumNUnit\bin\Debug\AMSelenium.Test.dll" executed="True" result="Failure" success="False" time="403.246" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="AMSelenium" executed="True" result="Failure" success="False" time="403.229" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Test" executed="True" result="Failure" success="False" time="403.229" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="TestCases" executed="True" result="Failure" success="False" time="403.228" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="AdministrationTest" executed="True" result="Success" success="True" time="33.270" asserts="0">
+                    <results>
+                      <test-case name="AMSelenium.Test.TestCases.AdministrationTest.AddNewUser" executed="True" result="Success" success="True" time="33.160" asserts="2" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="EditAccountsTest" executed="True" result="Success" success="True" time="222.434" asserts="0">
+                    <results>
+                      <test-suite type="ParameterizedTest" name="AddNewAccount" executed="True" result="Success" success="True" time="68.222" asserts="0">
+                        <categories>
+                          <category name="Smoke" />
+                        </categories>
+                        <results>
+                          <test-case name="AMSelenium.Test.TestCases.EditAccountsTest.AddNewAccount(AMSelenium.Test.TestData.Data.EditAccountTestData)" executed="True" result="Success" success="True" time="35.101" asserts="6" />
+                          <test-case name="AMSelenium.Test.TestCases.EditAccountsTest.AddNewAccount(AMSelenium.Test.TestData.Data.EditAccountTestData)" executed="True" result="Success" success="True" time="33.118" asserts="6" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="ParameterizedTest" name="AddNewAccountGroup" executed="True" result="Success" success="True" time="154.211" asserts="0">
+                        <categories>
+                          <category name="Smoke" />
+                        </categories>
+                        <results>
+                          <test-case name="AMSelenium.Test.TestCases.EditAccountsTest.AddNewAccountGroup(AMSelenium.Test.TestData.Data.EditAccountTestData)" executed="True" result="Success" success="True" time="79.485" asserts="4" />
+                          <test-case name="AMSelenium.Test.TestCases.EditAccountsTest.AddNewAccountGroup(AMSelenium.Test.TestData.Data.EditAccountTestData)" executed="True" result="Success" success="True" time="74.725" asserts="4" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="LoginTest" executed="True" result="Failure" success="False" time="147.504" asserts="0">
+                    <results>
+                      <test-suite type="ParameterizedTest" name="Login_Successful" executed="True" result="Failure" success="False" time="137.862" asserts="0">
+                        <categories>
+                          <category name="Smoke" />
+                        </categories>
+                        <results>
+                          <test-case name="AMSelenium.Test.TestCases.LoginTest.Login_Successful(AMSelenium.Test.TestData.Data.LoginTestData)" executed="True" result="Success" success="True" time="7.865" asserts="1" />
+                          <test-case name="AMSelenium.Test.TestCases.LoginTest.Login_Successful(AMSelenium.Test.TestData.Data.LoginTestData)" executed="True" result="Error" success="False" time="129.997" asserts="0">
+                            <failure>
+                              <message><![CDATA[System.TimeoutException : Timed out after 120 seconds
+  ----> OpenQA.Selenium.NoSuchElementException : Unable to find element with xpath == .//*[@id='ctl00_ctl00_cpPaneTopMain_LoginStatusTopRule']]]></message>
+                              <stack-trace><![CDATA[at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException) in c:\Projects\WebDriver\trunk\dotnet\src\WebDriver.Support\UI\DefaultWait.cs:line 206
+at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition) in c:\Projects\WebDriver\trunk\dotnet\src\WebDriver.Support\UI\DefaultWait.cs:line 190
+at AMSelenium.Test.Core.ThreadWait.WaitUntil(String xpathOfUI) in F:\workdir\TestAutomation\Selenium\Adra_Match\SeleniumNUnit\Core\TreadWait.cs:line 12
+at AMSelenium.Test.TestCases.LoginTest.Login_Successful(LoginTestData data) in F:\workdir\TestAutomation\Selenium\Adra_Match\SeleniumNUnit\TestCases\LoginTest.cs:line 42
+--NoSuchElementException
+at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse) in c:\Projects\WebDriver\trunk\dotnet\src\WebDriver\Remote\RemoteWebDriver.cs:line 947
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters) in c:\Projects\WebDriver\trunk\dotnet\src\WebDriver\Remote\RemoteWebDriver.cs:line 808
+at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value) in c:\Projects\WebDriver\trunk\dotnet\src\WebDriver\Remote\RemoteWebDriver.cs:line 837
+at OpenQA.Selenium.By.FindElement(ISearchContext context) in c:\Projects\WebDriver\trunk\dotnet\src\WebDriver\By.cs:line 272
+at AMSelenium.Test.Core.ThreadWait.<>c__DisplayClass1.<WaitUntil>b__0(IWebDriver d) in F:\workdir\TestAutomation\Selenium\Adra_Match\SeleniumNUnit\Core\TreadWait.cs:line 14
+at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition) in c:\Projects\WebDriver\trunk\dotnet\src\WebDriver.Support\UI\DefaultWait.cs:line 158
+]]></stack-trace>
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-case name="AMSelenium.Test.TestCases.LoginTest.Login_UnSuccessful" executed="True" result="Success" success="True" time="9.593" asserts="1">
+                        <categories>
+                          <category name="Smoke" />
+                        </categories>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
