@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeShell.Test", "SeShellTest\SeShell.Test.csproj", "{39A06612-5E45-462B-8E00-1EED59700717}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeShellTestStudio", "SeShellTestStudio\SeShellTestStudio.csproj", "{D14E19F1-D2DE-48EB-B208-65F6D888D492}"
