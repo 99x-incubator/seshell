@@ -33,32 +33,31 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Castle.Core">
-      <HintPath>..\Lib\selenium-dotnet-2.21.0\2.24.0\net40\Castle.Core.dll</HintPath>
+      <HintPath>..\packages\Castle.Core.3.3.3\lib\net40-client\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML">
+      <HintPath>..\packages\ClosedXML.0.76.0\lib\net40-client\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
     </Reference>
     <Reference Include="Ionic.Zip">
       <HintPath>..\Lib\selenium-dotnet-2.21.0\2.24.0\net40\Ionic.Zip.dll</HintPath>
     </Reference>
-    <Reference Include="log4net">
-      <HintPath>..\Lib\log4net-1.2.11\bin\net\4.0\release\log4net.dll</HintPath>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\Lib\selenium-dotnet-2.21.0\2.24.0\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="nunit">
-      <HintPath>..\Lib\NUnit-2.6.0.12051\bin\nunit.exe</HintPath>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
     </Reference>
-    <Reference Include="nunit-console">
-      <HintPath>..\Lib\NUnit-2.6.0.12051\bin\nunit-console.exe</HintPath>
-    </Reference>
-    <Reference Include="nunit-console-runner">
-      <HintPath>..\Lib\NUnit-2.6.0.12051\bin\lib\nunit-console-runner.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework, Version=2.6.0.12051, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+    <Reference Include="Selenium.WebDriverBackedSelenium, Version=2.47.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Lib\NUnit-2.6.0.12051\bin\framework\nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="Selenium.WebDriverBackedSelenium">
-      <HintPath>..\Lib\selenium-dotnet-2.21.0\2.24.0\net40\Selenium.WebDriverBackedSelenium.dll</HintPath>
+      <HintPath>..\packages\Selenium.WebDriverBackedSelenium.2.47.0\lib\net40\Selenium.WebDriverBackedSelenium.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -70,14 +69,17 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="ThoughtWorks.Selenium.Core">
-      <HintPath>..\Lib\selenium-dotnet-2.21.0\2.24.0\net40\ThoughtWorks.Selenium.Core.dll</HintPath>
+    <Reference Include="ThoughtWorks.Selenium.Core, Version=2.47.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Selenium.RC.2.47.0\lib\net40\ThoughtWorks.Selenium.Core.dll</HintPath>
     </Reference>
-    <Reference Include="WebDriver">
-      <HintPath>..\Lib\selenium-dotnet-2.21.0\2.24.0\net40\WebDriver.dll</HintPath>
+    <Reference Include="WebDriver, Version=2.47.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Selenium.WebDriver.2.47.0\lib\net40\WebDriver.dll</HintPath>
     </Reference>
-    <Reference Include="WebDriver.Support">
-      <HintPath>..\Lib\selenium-dotnet-2.21.0\2.24.0\net40\WebDriver.Support.dll</HintPath>
+    <Reference Include="WebDriver.Support, Version=2.47.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Selenium.Support.2.47.0\lib\net40\WebDriver.Support.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +109,9 @@
     <Compile Include="TestData\Data\LoginTestData.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.4.js" />
+    <Content Include="Scripts\jquery-2.1.4.min.js" />
     <None Include="app.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>
@@ -122,6 +127,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
+    <None Include="packages.config" />
+    <None Include="Scripts\jquery-2.1.4.min.map" />
     <None Include="TestData\Files\SSLoginData.csv" />
     <None Include="TestData\Files\SSLoginErrorData.csv" />
   </ItemGroup>
