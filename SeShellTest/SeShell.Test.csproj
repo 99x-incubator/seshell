@@ -85,6 +85,7 @@
   <ItemGroup>
     <Compile Include="Core\Configuration.cs" />
     <Compile Include="Core\EventLogger.cs" />
+    <Compile Include="Core\ExcelReader.cs" />
     <Compile Include="Core\ScreenShotImage.cs" />
     <Compile Include="Core\ThreadWait.cs" />
     <Compile Include="Enums\Enums.cs" />
